@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
 
@@ -7,7 +6,7 @@ echo "Enter your username:"
 read USERNAME
 
 if [[ ${#USERNAME} -gt 22 ]]; then
-  echo "O nome de usuário deve ter no máximo 22 caracteres."
+  echo "The username must have at most 22 characters."
   exit 1
 fi
 
